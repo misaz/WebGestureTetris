@@ -1,0 +1,25 @@
+{
+	"compilerOptions": {
+		"target": "ES2015",
+		"sourceMap": true,
+		"outFile": "outputs/tetris-bundle.js"
+	},
+	"compileOnSave": true,
+	"files": [
+		"src/Tetris.ts",
+		"src/Cell.ts",
+		"src/PartGenerator.ts",
+		"src/TransformSimulator.ts",
+		"src/FixedCells.ts",
+		"src/Vector.ts",
+		"src/Part.ts",
+		"src/TetrisRenderer.ts",
+		"src/KeyboardController.ts",
+		"src/Max25405EvkitController.ts",
+		"src/RenderingGridDimensions.ts",
+		"src/NotificationPane.ts",
+		"src/ToastNotification.ts",
+		"src/Command.ts",
+		"src/App.ts"
+	]
+}

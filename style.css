@@ -1,0 +1,168 @@
+body {
+	width: 80%;
+	height: 100%;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+header {
+	padding: 20px;
+}
+
+h1 {
+	text-align: center;
+	margin: 0;
+}
+
+:root {
+	position: relative;
+	height: 100%;
+}
+
+.layout-wrapper {
+	display: flex;
+	position: relative;
+	flex-grow: 1;
+}
+
+* {
+	font-family: Arial;
+}
+
+main {
+	flex: 3;
+}
+
+.panel {
+	flex: 1;
+}
+
+main canvas {
+	padding: 20px;
+	position: absolute;
+}
+
+button {
+	padding: 5px 20px;
+	background-color: orange;
+	border: 1px solid white;
+	border-radius: 6px;
+}
+
+button:hover {
+	background-color: darkorange;
+}
+
+button:disabled {
+	background-color: #e1e1e1;
+}
+
+button:disabled:hover {
+	background-color: #e1e1e1;
+}
+
+.key {
+	display: inline-block;
+	padding: 4px 6px;
+	border: 1px solid grey;
+	border-radius: 4px;
+}
+
+#notifications {
+	position: absolute;
+	top: 0;
+	right: 0;
+	max-width: 500px;
+}
+
+.notification {
+	display: block;
+}
+
+@keyframes notification-in {
+	from {
+		opacity: 0;
+		margin-top: 100px;
+	}
+
+	to {
+		opacity: 1;
+		margin-top: 10px;
+	}
+}
+
+@keyframes notification-out {
+	from {
+		opacity: 1;
+		margin-top: 10px;
+	}
+
+	80% {
+		opacity: 0;
+		margin-top: -100px;
+	}
+
+	to {
+		opacity: 0;
+		margin-top: -100px;
+	}
+}
+
+.notification {
+	margin: 10px;
+	padding: 10px;
+	min-height: 80px;
+	border: 2px solid #a5d42fff;
+	border-radius: 8px;
+	background-color: white;
+
+	animation-iteration-count: 1;
+	animation-name: notification-in;
+	animation-duration: 0.8s;
+}
+
+.notification.deleting {
+	animation-iteration-count: 1;
+	animation-name: notification-out;
+	animation-duration: 1s;
+}
+
+.notification h3, .notification p {
+	margin: 0;
+}
+
+.notification img {
+	float: left;
+	width: 80px;
+	height: 80px;
+	margin-right: 10px;
+}
+
+#task-list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#task-list img {
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+
+#task-list span {
+	margin: 0;
+	margin-bottom: 10px;
+}
+
+#task-list span.number {
+	display: inline-block;
+	width: 20px;
+	min-width: 20px;
+	max-width: 20px;
+}
+
+#task-list div {
+	display: flex;
+}

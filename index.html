@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+	<title>Gesture Tetris</title>
+	<script src="outputs/tetris-bundle.js" type="text/javascript"></script>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<header>
+		<h1>Gesture Tetris</h1>
+	</header>
+	<div class="layout-wrapper">
+		<main>
+			<canvas id="tetris-main-area"></canvas>
+		</main>
+		<div class="panel">
+			<section>
+				<h2>Play with gesture sensor!</h2>
+				<ol id="task-list">
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">1.</span><span>Assemble the <a hred="https://www.maximintegrated.com/en/products/sensors/MAX25405EVKIT.html">MAX25405 Gesture Sensor Evaluation Kit</a> by connecting Shield and Microcontroller boards together.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">2.</span><span>Connect Sensor Board to the Kit using Ribbon cable.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">3.</span><span>Connect Power Adapter to the Shield.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">4.</span><span>Connect Kit to the computer using USB cable.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">5.</span><span>Press <button id="connect-sensor-btn">Connect</button> or press <span class="key">C</span> key.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">6.</span><span>Select device and confirm dialog.</span></div></li>
+					<li><div><img src="img/not-completed.png" alt="Task not completed yet" /><span class="number">7.</span><span>Swipe hand up in the front of sensor to start the game.</span></div></li>
+				</ol>
+			</section>
+			<section>
+				<h2 id="score">Score: 0</h2>
+
+				<h2>Next part</h2>
+				<canvas width="120" height="120" id="tetris-next-part"></canvas>
+			</section>
+		</div>
+	</div>
+	<div id="notifications"></div>
+</body>
